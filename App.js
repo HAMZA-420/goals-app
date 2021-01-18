@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <View style={styles.screen}>
-    <Button title = "Add" onPress={() => setAddMode(true)}/>
+    <Button title = "Add New Goal" onPress={() => setAddMode(true)}/>
     <GoalInput visible={isAddMode} onAddGoal={addGoalHandler}/>
     <FlatList 
     keyExtractor={(item, index)=>item.id} 
